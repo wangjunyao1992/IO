@@ -33,7 +33,7 @@ import java.util.Set;
  * @version 1.0.0
  * @createTime 2020年11月10日 17:24:00
  */
-public class ServerSocketMultiplexingMultithread3 implements IServerSocketNIO, ILiftCycle{
+public class ServerSocketMultiplexingSingleThread3 implements IServerSocketNIO, ILiftCycle{
 
     //服务端监听的端口
     private final int port;
@@ -44,7 +44,7 @@ public class ServerSocketMultiplexingMultithread3 implements IServerSocketNIO, I
     //多路复用器
     private Selector selector;
 
-    public ServerSocketMultiplexingMultithread3(int port) {
+    public ServerSocketMultiplexingSingleThread3(int port) {
         this.port = port;
     }
 
